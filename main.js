@@ -1,4 +1,4 @@
-// What a wonderful world
+// Remind everyone that the world is wonderful
 console.log("What a wonderful world");
 
 var geocoder;
