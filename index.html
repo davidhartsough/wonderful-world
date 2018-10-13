@@ -1,52 +1,63 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>What a wonderful world</title>
-	<style type="text/css">
-		body {
-			margin:0;
-			font-family:sans-serif;
-		}
-		#street-view {
-			position:absolute;
-			width:100%;
-			height:100%;
-		}
-		#progress {
-			position:fixed;
-			top:0;
-			left:0;
-			width:1%;
-			height:0.5rem;
-			background-color:rgba(255,255,255,0.5);
-			z-index:1;
-			cursor:pointer;
-		}
-		#address {
-			position:fixed;
-			bottom:1em;
-			text-align:center;
-			color:rgba(255,255,255,0.9);
-			z-index:1;
-			width:90%;
-			padding:1em 5%;
-			margin:0;
-			text-shadow:
-				-1px -1px 0 rgba(0,0,0,0.6),
-				1px -1px 0 rgba(0,0,0,0.6),
-				-1px 1px 0 rgba(0,0,0,0.6),
-				1px 1px 0 rgba(0,0,0,0.6);
-		}
-	</style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <title>Wonderful World</title>
+  <meta name="description" content="Get lost in a wave of wanderlust while exploring this wonderful world, one photosphere at a time.">
+  <meta name="keywords" content="wonderful,world,photosphere,street view,wanderlust,panorama,earth,explore,beautiful,random">
+  <meta name="author" content="David Hartsough">
+  <link rel="canonical" href="https://davidhartsough.github.io/wonderful-world/">
+  <meta property="og:title" content="Wonderful World">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://davidhartsough.github.io/wonderful-world/">
+  <meta property="og:image" content="https://davidhartsough.github.io/wonderful-world/logo.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="Wonderful World logo">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:description" content="Get lost in a wave of wanderlust while exploring this wonderful world, one photosphere at a time.">
+  <meta property="og:site_name" content="Wonderful World">
+  <meta name="twitter:card" content="summary">
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org/",
+      "@type": "WebSite",
+      "name": "Wonderful World",
+      "url": "https://davidhartsough.github.io/wonderful-world/",
+      "headline": "Wonderful World",
+      "keywords": "wonderful,world,photosphere,street view,wanderlust,panorama,earth,explore,beautiful,random",
+      "description": "Get lost in a wave of wanderlust while exploring this wonderful world, one photosphere at a time.",
+      "image": "https://davidhartsough.github.io/wonderful-world/logo.png",
+      "author": {
+        "@type": "Person",
+        "name": "David Hartsough"
+      }
+    }
+  </script>
+  <link rel="manifest" href="./manifest.json">
+  <link rel="author" href="./humans.txt">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="Wonderful World">
+  <meta name="theme-color" content="#3F51B5">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Wonderful World">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="shortcut icon" href="./favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./android-chrome-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <meta name="msapplication-TileImage" content="./mstile-144x144.png">
+  <meta name="msapplication-TileColor" content="#3F51B5">
+  <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#3F51B5">
+  <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-	<div id="street-view"></div>
-	<div id="progress" onclick="requestNew()"></div>
-	<p id="address"></p>
-	<script src="./main.js" type="text/javascript"></script>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=<KEY>&callback=initialize"></script>
+  <div id="street-view"></div>
+  <div id="progress" onclick="requestNew()"></div>
+  <p id="address"></p>
+  <script src="./main.js" type="text/javascript"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLZVSbCy8pO7gpngZk-0qXEfIl4DjfF_8&callback=initialize"></script>
 </body>
 </html>
